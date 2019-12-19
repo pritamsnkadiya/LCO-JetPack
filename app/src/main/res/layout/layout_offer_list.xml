@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="allListModel"
+            type="com.example.lcogetpack.data.model.AllListData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/sp_5"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/sp_5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_offer"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_15"
+                        android:textStyle="bold"
+                        app:title="@{allListModel.title}" />
+
+                    <TextView
+                        android:id="@+id/tv_offer_date"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="end"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_13"
+                        android:textStyle="italic"
+                        app:createdAt="@{allListModel.createdAt}" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sp_1"
+                    android:layout_marginTop="@dimen/sp_5"
+                    android:background="@color/grey" />
+
+                <TextView
+                    android:id="@+id/tv_offer_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sp_5"
+                    android:textSize="@dimen/sp_17"
+                    app:detail="@{allListModel.detail}" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/diemen_30dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_mso_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/diemen_120dp"
+                    android:src="@mipmap/mso_list"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/diemen_30dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_lco_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/diemen_120dp"
+                    android:src="@mipmap/lco_list"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_lba_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/diemen_120dp"
+                    android:src="@mipmap/lba_list"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_user_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/diemen_120dp"
+                    android:src="@mipmap/user_list"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_isd_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/diemen_120dp"
+                    android:src="@mipmap/isd_list"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

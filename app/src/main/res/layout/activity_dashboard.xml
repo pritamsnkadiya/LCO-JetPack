@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="dashboardView"
+            type="com.example.lcogetpack.ui.ui.activity.userprofile.ProfileViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/view_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar_menu_id"
+                layout="@layout/toolbar" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/diemen_250dp"
+                    android:scaleType="fitXY" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginLeft="@dimen/sp_20"
+                    android:layout_marginTop="165dp"
+                    android:layout_marginRight="@dimen/sp_20"
+                    app:cardCornerRadius="8sp"
+                    app:cardUseCompatPadding="true"
+                    card_view:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sp_10"
+                        android:layout_marginBottom="@dimen/diemen_30dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Name: "
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/sp_22"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kabir Pra"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/sp_22"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Phone: "
+                                android:textSize="@dimen/sp_17" />
+
+                            <TextView
+                                android:id="@+id/tv_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8959782829"
+                                android:textSize="@dimen/sp_17" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Email: "
+                                android:textSize="@dimen/sp_17" />
+
+                            <TextView
+                                android:id="@+id/tv_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="kabir@gmail.com"
+                                android:textSize="@dimen/sp_17" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address: "
+                                android:textSize="@dimen/sp_17" />
+
+                            <TextView
+                                android:id="@+id/tv_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="656-A Sudama nager Indore (M.P.)"
+                                android:textSize="@dimen/sp_17" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/sp_1"
+                            android:layout_marginTop="@dimen/sp_20"
+                            android:background="@color/text_color" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Subscription &amp; user Data"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/sp_22"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_show_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Subscriptions: "
+                                    android:textSize="@dimen/sp_17"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_subscription"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2000rs"
+                                    android:textSize="@dimen/sp_17" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="No of Users: "
+                                    android:textSize="@dimen/sp_17" />
+
+                                <TextView
+                                    android:id="@+id/tv_no_users"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="890"
+                                    android:textSize="@dimen/sp_17" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fab"
+            android:layout_width="@dimen/diemen_60dp"
+            android:layout_height="@dimen/diemen_70"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@mipmap/icon_message_yl" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

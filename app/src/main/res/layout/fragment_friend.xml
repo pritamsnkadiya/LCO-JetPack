@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="friendView"
+            type="com.example.lcogetpack.ui.ui.fragments.friends.FriendsViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/view_background"
+        android:orientation="vertical"
+        tools:context=".ui.ui.fragments.friends.FriendFragment">
+
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <include
+                android:id="@+id/main_toolbar_id"
+                layout="@layout/toolbar" />
+
+            <LinearLayout
+                android:id="@+id/ll_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/sp_10"
+                android:visibility="gone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_user_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_card2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/data_not_found" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/search_toolbar_id"
+                layout="@layout/search_toolbar" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_search_user_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/sp_10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

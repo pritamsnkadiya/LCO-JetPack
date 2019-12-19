@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="createPostView"
+            type="com.example.lcogetpack.ui.ui.activity.createpost.CreatePostViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.ui.activity.createpost.CreatePostActivity">
+
+        <include
+            android:id="@+id/create_post_id"
+            layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/sp_5">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="@dimen/sp_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_create_post"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="@dimen/diemen_10dp"
+                            android:layout_marginRight="@dimen/diemen_10dp"
+                            android:background="@color/btn_bg"
+                            android:paddingLeft="@dimen/diemen_10dp"
+                            android:paddingTop="@dimen/diemen_5dp"
+                            android:paddingRight="@dimen/diemen_10dp"
+                            android:paddingBottom="@dimen/diemen_5dp"
+                            android:text="POST"
+                            android:textColor="#fff" />
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/ed_create_post"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/diemen_150dp"
+                                    android:layout_marginTop="@dimen/sp_25"
+                                    android:background="@drawable/button_background"
+                                    android:gravity="start"
+                                    android:hint="What do you want to talk about?"
+                                    android:padding="@dimen/sp_10" />
+
+                                <ImageView
+                                    android:id="@+id/img_show_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/diemen_200dp"
+                                    android:layout_marginTop="@dimen/sp_20"
+                                    android:scaleType="fitXY"
+                                    android:visibility="gone" />
+
+                                <VideoView
+                                    android:id="@+id/video_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/diemen_200dp"
+                                    android:layout_marginTop="@dimen/sp_20"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/diemen_50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_choose_image"
+                            android:layout_width="@dimen/diemen_50dp"
+                            android:layout_height="@dimen/diemen_50dp"
+                            android:layout_marginRight="@dimen/diemen_50dp"
+                            android:src="@drawable/ic_camera_icon" />
+
+                        <ImageView
+                            android:id="@+id/img_choose_video"
+                            android:layout_width="@dimen/diemen_50dp"
+                            android:layout_height="@dimen/diemen_50dp"
+                            android:layout_marginLeft="@dimen/diemen_50dp"
+                            android:src="@drawable/ic_video_player_icon" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

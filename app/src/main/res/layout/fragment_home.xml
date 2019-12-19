@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="homeView"
+            type="com.example.lcogetpack.ui.ui.fragments.home.HomeViewModel" />
+    </data>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/view_background"
+        tools:context=".ui.ui.fragments.HomeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar_menu_id"
+                layout="@layout/toolbar_menu" />
+
+            <LinearLayout
+                android:id="@+id/ll_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/sp_10"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_name_under"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/sp_10"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_17" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/sp_5">
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="40sp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.4">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_background">
+
+                            <Spinner
+                                android:id="@+id/sp_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/diemen_40dp"
+                                android:padding="1sp"
+                                android:popupBackground="@drawable/button_background"
+                                android:spinnerMode="dropdown" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="9sp"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="40sp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.4">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_background">
+
+                            <Spinner
+                                android:id="@+id/sp_city"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/diemen_40dp"
+                                android:padding="1sp"
+                                android:popupBackground="@drawable/button_background"
+                                android:spinnerMode="dropdown" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="9sp"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/bt_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/diemen_40dp"
+                            android:background="@drawable/button_background"
+                            android:text="Search" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_user_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_card2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/data_not_found" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fab"
+            android:layout_width="@dimen/diemen_50dp"
+            android:layout_height="@dimen/diemen_50dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@mipmap/icon_float"
+            android:visibility="visible" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

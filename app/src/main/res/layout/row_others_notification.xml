@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="allListModel"
+            type="com.example.lcogetpack.data.model.AllListData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/diemen_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading_msg_notification_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/diemen_5dp"
+                android:layout_marginTop="@dimen/diemen_5dp"
+                android:textColor="#000"
+                android:textSize="@dimen/sp_16"
+                app:title="@{allListModel.title}" />
+
+            <TextView
+                android:id="@+id/date_notification_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/diemen_5dp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/sp_14"
+                app:createdAt="@{allListModel.createdAt}" />
+
+            <TextView
+                android:id="@+id/description_msg_notification_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/diemen_5dp"
+                android:layout_marginTop="@dimen/diemen_15dp"
+                android:textColor="#000"
+                android:textSize="@dimen/sp_15"
+                app:description="@{allListModel.description}" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

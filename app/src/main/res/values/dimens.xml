@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="diemen_1dp">1dp</dimen>
+    <dimen name="diemen_2dp">2dp</dimen>
+    <dimen name="diemen_3dp">3dp</dimen>
+    <dimen name="diemen_4dp">4dp</dimen>
+    <dimen name="diemen_5dp">5dp</dimen>
+    <dimen name="diemen_6dp">6dp</dimen>
+    <dimen name="diemen_7dp">7dp</dimen>
+    <dimen name="diemen_8dp">8dp</dimen>
+    <dimen name="diemen_9dp">9dp</dimen>
+    <dimen name="diemen_10dp">10dp</dimen>
+    <dimen name="diemen_11dp">11dp</dimen>
+    <dimen name="diemen_12dp">12dp</dimen>
+    <dimen name="diemen_13dp">13dp</dimen>
+    <dimen name="diemen_14dp">14dp</dimen>
+    <dimen name="diemen_15dp">15dp</dimen>
+    <dimen name="diemen_16dp">16dp</dimen>
+    <dimen name="diemen_17dp">17dp</dimen>
+    <dimen name="diemen_18dp">18dp</dimen>
+    <dimen name="diemen_19dp">19dp</dimen>
+    <dimen name="diemen_20dp">20dp</dimen>
+    <dimen name="diemen_21dp">21dp</dimen>
+    <dimen name="diemen_22dp">22dp</dimen>
+    <dimen name="diemen_23dp">23dp</dimen>
+    <dimen name="diemen_24dp">24dp</dimen>
+    _____________________________________________
+
+    <dimen name="diemen_25dp">25dp</dimen>
+    <dimen name="diemen_26dp">26dp</dimen>
+    <dimen name="diemen_27dp">27dp</dimen>
+    <dimen name="diemen_28dp">28dp</dimen>
+    <dimen name="diemen_29dp">29dp</dimen>
+    <dimen name="diemen_30dp">30dp</dimen>
+    <dimen name="diemen_31dp">31dp</dimen>
+    <dimen name="diemen_32dp">32dp</dimen>
+    <dimen name="diemen_33dp">33dp</dimen>
+    <dimen name="diemen_34dp">34dp</dimen>
+
+    <dimen name="diemen_35dp">35dp</dimen>
+    <dimen name="diemen_36dp">36dp</dimen>
+    <dimen name="diemen_37dp">37dp</dimen>
+    <dimen name="diemen_38dp">38dp</dimen>
+    <dimen name="diemen_39dp">39dp</dimen>
+    <dimen name="diemen_40dp">40dp</dimen>
+    <dimen name="diemen_41dp">41dp</dimen>
+    <dimen name="diemen_42dp">42dp</dimen>
+    <dimen name="diemen_43dp">43dp</dimen>
+    <dimen name="diemen_44dp">44dp</dimen>
+
+    <dimen name="diemen_45dp">45dp</dimen>
+    <dimen name="diemen_46dp">47dp</dimen>
+    <dimen name="diemen_48dp">48dp</dimen>
+    <dimen name="diemen_49dp">49dp</dimen>
+    <dimen name="diemen_50dp">50dp</dimen>
+    <dimen name="diemen_51dp">51dp</dimen>
+    <dimen name="diemen_0dp">0dp</dimen>
+    <dimen name="diemen_70">70dp</dimen>
+    //For textSize
+    <dimen name="sp_1">1sp</dimen>
+    <dimen name="sp_2">2sp</dimen>
+    <dimen name="sp_3">3sp</dimen>
+    <dimen name="sp_4">4sp</dimen>
+    <dimen name="sp_5">5sp</dimen>
+    <dimen name="sp_6">6sp</dimen>
+    <dimen name="sp_7">7sp</dimen>
+    <dimen name="sp_8">8sp</dimen>
+    <dimen name="sp_9">9sp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_11">11sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_17">17sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_19">19sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_21">21sp</dimen>
+    <dimen name="sp_22">22sp</dimen>
+    <dimen name="sp_23">23sp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+    <dimen name="sp_25">26sp</dimen>
+    <dimen name="sp_28">27sp</dimen>
+
+    <dimen name="common_text_size">18sp</dimen>
+    <dimen name="button_text_size">22sp</dimen>
+
+
+    <dimen name="diemen_80dp">80dp</dimen>
+    <dimen name="diemen_60dp">60dp</dimen>
+    <dimen name="diemen_150dp">150dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="diemen_120dp">120dp</dimen>
+    <dimen name="diemen_100dp">100dp</dimen>
+    <dimen name="diemen_70dp">70dp</dimen>
+    <dimen name="diemen_15p">15dp</dimen>
+    <dimen name="diemen_200dp">200dp</dimen>
+    <dimen name="diemen_110dp">110dp</dimen>
+    <dimen name="card_margin">10dp</dimen>
+    <dimen name="grid_layout_margin">10dp</dimen>
+    <dimen name="diemen_250dp">250dp</dimen>
+    <dimen name="diemen_230dp">230dp</dimen>
+    <dimen name="diemen_220dp">220dp</dimen>
+    <dimen name="diemen_75dp">75dp</dimen>
+    <dimen name="diemen_180dp">180dp</dimen>
+    <dimen name="diemen_55dp">55dp</dimen>
+    <dimen name="diemen_57dp">57dp</dimen>
+    <dimen name="diemen_90">90dp</dimen>
+    <dimen name="diemen_25p">25dp</dimen>
+    <dimen name="diemen_65dp">65dp</dimen>
+
+
+</resources>

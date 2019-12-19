@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="notificationView"
+            type="com.example.lcogetpack.ui.ui.fragments.notification.NotificationViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.ui.fragments.notification.NotificationFragment">
+
+        <include
+            android:id="@+id/notification_toolbar_id"
+            layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="55dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/diemen_10dp"
+                    android:padding="@dimen/sp_10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/diemen_5dp"
+                            android:layout_marginTop="@dimen/diemen_10dp"
+                            android:layout_marginBottom="@dimen/diemen_10dp"
+                            android:text="Friend's Request"
+                            android:textColor="#000"
+                            android:textSize="@dimen/sp_16" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2px"
+                            android:background="@color/text_color" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_friend_request"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/diemen_10dp"
+                            android:layout_marginTop="@dimen/diemen_10dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/diemen_10dp"
+                    android:padding="@dimen/sp_10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/diemen_5dp"
+                            android:layout_marginTop="@dimen/diemen_10dp"
+                            android:layout_marginBottom="@dimen/diemen_10dp"
+                            android:text="Admin Messages"
+                            android:textColor="#000"
+                            android:textSize="@dimen/sp_16" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2px"
+                            android:background="@color/text_color" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_notification_other"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/diemen_10dp"
+                            android:layout_marginTop="@dimen/diemen_10dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

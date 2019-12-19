@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.ui.activity.registration.RegistarionActivity">
+
+    <data>
+
+        <variable
+            name="registrationView"
+            type="com.example.lcogetpack.ui.ui.activity.registration.RegistrationViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/registration_id"
+                layout="@layout/toolbar" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbarSize="@dimen/diemen_0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/diemen_110dp"
+                        android:background="@mipmap/ic_uper_bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/diemen_40dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/diemen_120dp"
+                            android:gravity="center">
+
+                            <FrameLayout
+                                android:id="@+id/image_empty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/user_dp"
+                                    android:layout_width="@dimen/diemen_120dp"
+                                    android:layout_height="@dimen/diemen_120dp"
+                                    android:src="@mipmap/ic_upload"
+                                    app:civ_border_color="@color/colorAccent"
+                                    app:civ_border_overlay="true"
+                                    app:civ_border_width="@dimen/sp_2" />
+
+                                <ImageView
+                                    android:id="@+id/iv_select_image_change"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_marginLeft="40dp"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@mipmap/cam" />
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/sp_15">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80sp"
+                            android:layout_marginRight="15sp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/icon_user" />
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ed_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="start"
+                                android:hint="Enter Name"
+                                android:inputType="text"
+                                android:paddingLeft="10sp"
+                                android:textAllCaps="true"
+                                android:textColorHint="#000"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80sp"
+                            android:layout_marginRight="15sp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/icon_gry_msg" />
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ed_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="start"
+                                android:hint="Enter Email Address"
+                                android:inputType="textEmailAddress"
+                                android:paddingLeft="10sp"
+                                android:textAllCaps="true"
+                                android:textColorHint="#000"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80sp"
+                            android:layout_marginRight="15sp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/icon_gry_phone" />
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ed_mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="start"
+                                android:hint="Enter Mobile Number"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:paddingLeft="10sp"
+                                android:textAllCaps="true"
+                                android:textColorHint="#000"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80sp"
+                            android:layout_marginRight="15sp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/iconpass" />
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ed_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="start"
+                                android:hint="Enter Password"
+                                android:inputType="textPassword"
+                                android:paddingLeft="10sp"
+                                android:textAllCaps="true"
+                                android:textColorHint="#000"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80sp"
+                            android:layout_marginRight="15sp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/icon_gry_address" />
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/ed_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="start"
+                                android:hint="Enter Address"
+                                android:inputType="textPostalAddress"
+                                android:paddingLeft="10sp"
+                                android:textAllCaps="true"
+                                android:textColorHint="#000"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80sp"
+                            android:layout_marginRight="15sp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/icon_gry_address" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.6">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Spinner
+                                    android:id="@+id/sp_state"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/diemen_40dp"
+                                    android:padding="1sp"
+                                    android:popupBackground="@drawable/button_background"
+                                    android:spinnerMode="dropdown" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="9sp"
+                                        android:visibility="visible" />
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/sp_1"
+                            android:layout_marginLeft="@dimen/diemen_65dp"
+                            android:background="@color/text_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80sp"
+                            android:layout_marginRight="15sp"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/icon_gry_address" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.6">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Spinner
+                                    android:id="@+id/sp_city"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/diemen_40dp"
+                                    android:padding="1sp"
+                                    android:popupBackground="@drawable/button_background"
+                                    android:spinnerMode="dropdown" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="9sp"
+                                        android:visibility="visible" />
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/sp_1"
+                            android:layout_marginLeft="@dimen/diemen_65dp"
+                            android:background="@color/text_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_select_channel_packages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/sp_15"
+                        android:background="@drawable/rounded_bckg_black">
+
+                        <TextView
+                            android:id="@+id/tv_show_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/sp_10"
+                            android:text="Select Channels / Packages"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_20" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40sp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/submit"
+                            android:layout_width="@dimen/diemen_180dp"
+                            android:layout_height="@dimen/diemen_40dp"
+                            android:background="@drawable/button_background"
+                            android:gravity="center"
+                            android:text="Submit"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

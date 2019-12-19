@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="forumViewModel"
+            type="com.example.lcogetpack.ui.ui.activity.forumdetails.ForumDetailsViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.ui.activity.forumdetails.ForumDetailsActivity">
+
+        <include
+            android:id="@+id/forum_toolbar_id"
+            layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sp_15"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_forum_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/sp_5"
+                    android:background="@drawable/button_background"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/sp_5">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_15"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Is simply dummy text of the ?"
+                        android:textSize="@dimen/sp_17" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/sp_15"
+                    android:gravity="center"
+                    android:text="Answer's"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_22" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_forum_answer_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/sp_5"
+                    android:padding="@dimen/sp_5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/sp_15"
+                    android:padding="@dimen/sp_2">
+
+                    <EditText
+                        android:id="@+id/ed_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/diemen_120dp"
+                        android:background="@drawable/button_background"
+                        android:gravity="start"
+                        android:hint="Enter your Answer "
+                        android:padding="@dimen/sp_5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40sp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/bt_submit"
+                        android:layout_width="@dimen/diemen_180dp"
+                        android:layout_height="@dimen/diemen_40dp"
+                        android:background="@drawable/button_background"
+                        android:gravity="center"
+                        android:text="Submit"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
